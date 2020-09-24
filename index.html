@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>galerie</title>
+
+	<style type="text/css">
+		
+@font-face{
+	font-family: "becca & perry script - sample";
+	src : url("font/becca & perry script - sample.ttf");
+}
+@font-face {	
+	font-family: "KGALittleSwag";
+	src : url("font/KGALittleSwag.ttf");
+} 
+
+*{
+	margin: 0;
+}
+
+body{color: #cabbe9; background-color: #fdfdfd;}
+
+img{
+	width: 300px;
+	height: 300px;
+
+}
+
+p{
+		font-family: "becca & perry script - sample";
+}
+h2{
+		font-family: "KGALittleSwag";
+		font-weight: normal;
+		font-size: 3em;
+}
+
+.galerie {display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(3,1fr);
+	grid-gap: 2%;
+}
+
+.un {
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+.deux {
+	grid-column: 2/3
+	grid-row:1;
+}
+
+.trois {
+	grid-column: 3/4;
+	grid-row:1;
+}
+
+.quatre {
+	grid-column: 1/2;
+	grid-row: 2;
+}
+.cinq {
+	grid-column: 2/3;
+	grid-row: 2
+}
+
+.six{
+	grid-column: 3/4;
+	grid-row: 2
+}
+
+.sept {
+	grid-column: 1/2;
+	grid-row: 3;
+}
+
+.huit{
+	grid-column: 2/3;
+	grid-row: 3;
+}
+
+.neuf{
+	grid-column: 3/4;
+	grid-row:3;
+}
+
+.miseenpage {
+	display: grid;
+	grid-template-columns: 3(1fr);
+	grid-template-rows: 2(1fr);
+}
+
+.textpresentation {
+	grid-column: 1/2;
+	grid-row: auto;
+position: sticky; top: 20px;
+}
+
+.galerie{
+
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+
+
+.presentation {position: sticky; top: 20px;}
+	</style>
+
+</head>
+<body>
+
+<div class="miseenpage">		
+		<div class="textpresentation">	
+
+			<h2>  (__présentation__) </h2>
+		<p class="presentation">
+			Coucou moi c'est Juliette, passionnée de carterie et de loisirs créatifs, je vous fais découvrir mes créations :) <br>
+
+			Pour mes créations j'utilise mes mains et des outils tel que, une souris, une table, une chaise et de l'amour, <br>
+
+			je vous invite à regarder quelques-unes de mes créations.
+		</p>
+
+	</div>
+<div class="galerie">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/naissance2.jpg" class="un">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/naissance.jpg" class="deux">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/fete_des_peres.jpg" class="trois">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/etabli.jpg" class="quatre">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/attrape_reve.jpg" class="cinq">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/anniversaires.jpg" class="six">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/anniversairefaitmain.jpg" class="sept">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/anniversaire_feerique.jpg" class="huit">
+
+	<img src="http://www.juliettefeedescartes.fr/wp-content/uploads/2020/09/anniversaire.jpg" class="neuf">
+
+</div>
+</body>
+</html>
